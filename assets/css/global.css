@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply uppercase block w-full p-4 rounded-full focus:outline-none font-bold transition duration-200 cursor-pointer
+}
+.btn.btn-primary {
+  @apply bg-primary hover:opacity-90 text-primary-text
+}
+
+.message-indicator {
+  top: -3px;
+  right: -5px;
+  @apply animate-ping absolute bg-red-500 h-2.5 w-2.5 rounded-full z-50 border border-red-300
+}
+
+.z-100 {
+  z-index: 100;
+}
+.h-116 {
+  height: 30rem;
+}
+
+/*
+ * Quicklink bg fix 
+ */
+@media (min-width: 768px) {
+  .quickLink:nth-child(2) .dots {
+    @apply hidden
+  }
+
+}
+@media (min-width: 1024px) {
+  .quickLink:nth-child(2) .dots {
+    @apply block
+  }
+
+}
+.quickLink:last-child .dots {
+  @apply hidden
+}
+
+.auth0-lock.auth0-lock .auth0-lock-header, .auth0-lock.auth0-lock .auth0-lock-header-bg {
+  background-color: transparent !important;
+  /* @apply bg-primary */
+}
+
+.auth0-lock.auth0-lock .auth0-lock-header-bg .auth0-lock-header-bg-blur {
+  filter: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+
+}
+
+.auth0-lock-header {
+  /*@apply pb-20 !important;*/
+}
+
+.auth0-lock-content-body-wrapper, .auth0-lock-form {
+  border-radius: 5px 5px 0 0 !important;
+}
+
+.auth0-lock-header-bg,
+.auth0-lock-header-welcome,
+.auth0-lock.auth0-lock .auth0-lock-submit .icon-text {
+  display:none !important;
+}
+
+.auth0-lock.auth0-lock .auth0-lock-submit .auth0-label-submit {
+  @apply text-primary-text
+}
+
+.auth0-lock.auth0-lock .auth0-lock-form {
+  padding-top: 0 !important;
+}
+
+.auth0-lock.auth0-lock .auth0-lock-cred-pane-internal-wrapper {
+  height: 100% !important;
+}

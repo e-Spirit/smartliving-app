@@ -1,0 +1,126 @@
+{
+  "name": "smartliving-app",
+  "version": "1.0.1",
+  "description": "Demo PWA built with FSXA",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest",
+    "commit": "git-cz",
+    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS",
+    "semantic-release": "semantic-release"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "dependencies": {
+    "@nuxtjs/auth-next": "5.0.0-1637745161.ea53f98",
+    "@nuxtjs/axios": "^5.12.1",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "apexcharts": "^3.30.0",
+    "auth0-lock": "^11.33.0",
+    "better-sse": "^0.6.0",
+    "consola": "^2.15.3",
+    "cookie-universal-nuxt": "^2.1.5",
+    "core-js": "^3.22.7",
+    "cors": "^2.8.5",
+    "fsxa-api": "9.0.2",
+    "fsxa-nuxt-module": "5.1.0",
+    "fsxa-pattern-library": "6.1.0",
+    "lodash.clonedeep": "4.5.0",
+    "lodash.flatten": "^4.4.0",
+    "lodash.get": "^4.4.2",
+    "lodash.merge": "^4.6.2",
+    "lodash.omit": "^4.4.2",
+    "nuxt": "^2.13.3",
+    "nuxt-fontawesome": "^0.4.0",
+    "tailwindcss": "^2.2.19",
+    "vue": "^2.6.14",
+    "vue-apexcharts": "^1.6.2",
+    "vue-async-computed": "^3.9.0",
+    "vue-async-computed-decorator": "^0.0.5",
+    "vue-scrollto": "^2.20.0",
+    "ws": "^7.5.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.16.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^7.0.2",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.4",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@types/auth0": "^2.34.7",
+    "@types/auth0-lock": "^11.27.3",
+    "@types/express": "^4.17.13",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/lodash.flatten": "^4.4.6",
+    "@types/lodash.get": "^4.4.6",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/lodash.omit": "^4.5.5",
+    "@types/ws": "^8.2.2",
+    "@vue/test-utils": "^1.2.2",
+    "autoprefixer": "^10.4.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-vca-jsx": "^0.3.6",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.0.1",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-nuxt": ">=3.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier-vue": "^3.1.0",
+    "eslint-plugin-vue": "^8.0.0",
+    "husky": "^7.0.4",
+    "jest": "^26.6.3",
+    "lint-staged": "^12.0.2",
+    "nuxt-property-decorator": "^2.9.1",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "prettier-vue": "^1.1.2",
+    "semantic-release": "^19.0.2",
+    "ts-jest": "^26.5.6",
+    "vue-jest": "^4.0.1",
+    "vue-property-decorator": "^9.1.2",
+    "vue-tsx-support": "^3.2.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
