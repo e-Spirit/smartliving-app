@@ -162,7 +162,7 @@ In the FirstSpirit backend (e.g. Content Creator), access permissions can be set
 
 ## Legal Notices
 
-The SmartLiving App is a reference of [e-Spirit AG](http://www.e-spirit.com) AG, Dortmund, Germany.
+The SmartLiving App is a reference of [e-Spirit GmbH](http://www.e-spirit.com) , Dortmund, Germany.
 The SmartLiving App is subject to the Apache-2.0 license.
 
 ## Disclaimer
